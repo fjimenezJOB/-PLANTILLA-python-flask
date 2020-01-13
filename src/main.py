@@ -1,12 +1,12 @@
 # inicializando
-from flask import Flask
+from flask import Flask, redirect, render_template, request
 
 app=Flask(__name__)
 
 # rutas
 @app.route('/')
 def index():
-    pass
+    return render_template('index.html')
 
 
 
