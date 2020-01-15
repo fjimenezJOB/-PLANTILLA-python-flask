@@ -8,7 +8,7 @@ RUN apk add --no-cache python3-dev && pip3 install --upgrade pip
     # Montar imagen de docker con el alpine
 # docker build -t <nombre que le queramos dar a la imagen>
     # Entrar dentro del sistema del linux de docker alpine
-# docker run -it <nombreDeLaImagen>
+# docker run -it -p 7000:5000 -d <nombreDeLaImagen>
 
     # Crear una carpeta dentro del sistema operativo de linux para poder almacenar nuestra app
 
