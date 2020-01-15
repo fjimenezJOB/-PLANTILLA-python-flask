@@ -25,3 +25,7 @@ CMD ["python3", "src/main.py"]
 # docker container ls -> Para ver que containers se estan ejecutando
 # docker images -> ver las imagenes dispopnibles
 # docker stop <containerID> -> parar containers que estan ejecutandose
+# si tenemos el container arrancado y nos queremos meter dentro del shell de linux dentro del container :
+    #  docker ps -> para ver que containers estan corriendo,
+    # docker exec -it <id del container> /bin/sh
+# VOLUMEN -> Es una conexion con una rama local a un docker image para no tener que hacer builds
